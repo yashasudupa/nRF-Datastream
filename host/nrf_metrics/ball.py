@@ -1,10 +1,8 @@
 from .json_writer import JSONLinesWriter
 from .metrics import compute_metrics
 from .uuids import BALL_CMD_CHAR, BALL_DATA_CHAR
-
 import asyncio, time, struct, math
 from bleak import BleakScanner, BleakClient
-from .json_writer import JSONLinesWriter
 
 # UUIDs must match Arduino sketch
 SERVICE_UUID = "19B10000-E8F2-537E-4F6C-D104768A1214"
