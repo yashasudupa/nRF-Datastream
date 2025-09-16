@@ -1,3 +1,7 @@
+from .json_writer import JSONLinesWriter
+from .metrics import compute_metrics
+from .uuids import BALL_CMD_CHAR, BALL_DATA_CHAR
+
 # insole.py
 import asyncio
 import time
@@ -8,7 +12,6 @@ from typing import List, Tuple, Dict, Any
 
 from bleak import BleakClient, BleakScanner
 
-from .json_writer import JSONLinesWriter
 from .config import (
     LEFT_NAME, RIGHT_NAME,
     SERVICE_UUID, CMD_CHAR_UUID, DATA_CHAR_UUID,
