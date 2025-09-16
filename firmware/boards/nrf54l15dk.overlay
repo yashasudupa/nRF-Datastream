@@ -1,0 +1,17 @@
+/* Applies when you build for -b nrf54l15dk/nrf54l15 */
+
+&i2c0 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    /* Pins use board defaults; override here if you wire a discrete IMU */
+};
+
+/* If later you mount an LSM6… on i2c0 at 0x6A, you can add a node like:
+&i2c0 {
+    lsm6@6a {
+        compatible = "st,lsm6dsl";  /* placeholder if you switch to a Zephyr-supported variant */
+        reg = <0x6a>;
+        status = "okay";
+    };
+};
+*/
