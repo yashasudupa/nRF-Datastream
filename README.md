@@ -1,4 +1,4 @@
-# nrf_ble
+# nrf_metrics
 
 Minimal, structured nRF BLE stack:
 - **firmware/**: Zephyr-based app exposing a custom GATT service with Notify + Write.
